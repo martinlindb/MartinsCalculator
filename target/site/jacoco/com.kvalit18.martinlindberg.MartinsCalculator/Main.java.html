@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">MartinsCalculator</a> &gt; <a href="index.source.html" class="el_package">com.kvalit18.martinlindberg.MartinsCalculator</a> &gt; <span class="el_source">Main.java</span></div><h1>Main.java</h1><pre class="source lang-java linenums">package com.kvalit18.martinlindberg.MartinsCalculator;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import java.awt.BorderLayout;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class Main {
+	
+	double firstNum;
+	double secondNum;
+	double res;
+	
+	private  JTextField nr1TF;
+	private  JTextField nr2TF;
+	
+<span class="nc" id="L22">	private JLabel jlabelRes = new JLabel(&quot;Result: &quot;);</span>
+	
+<span class="nc" id="L24">	CalcBasic CalcBasic = new CalcBasic();</span>
+<span class="nc" id="L25">	CalcAdv CalcAdv = new CalcAdv();</span>
+
+	private JFrame frame;
+	private JTextField textField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L34">		EventQueue.invokeLater(new Runnable() {</span>
+			public void run() {
+				try {
+<span class="nc" id="L37">					Main window = new Main();</span>
+<span class="nc" id="L38">					window.frame.setVisible(true);</span>
+<span class="nc" id="L39">				} catch (Exception e) {</span>
+<span class="nc" id="L40">					e.printStackTrace();</span>
+<span class="nc" id="L41">				}</span>
+<span class="nc" id="L42">			}</span>
+		});
+<span class="nc" id="L44">	}</span>
+
+	/**
+	 * Create the application.
+	 */
+<span class="nc" id="L49">	public Main() {</span>
+<span class="nc" id="L50">		initialize();</span>
+<span class="nc" id="L51">	}</span>
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+<span class="nc" id="L57">		frame = new JFrame();</span>
+<span class="nc" id="L58">		frame.setBounds(100, 100, 330, 314);</span>
+<span class="nc" id="L59">		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span>
+<span class="nc" id="L60">		frame.getContentPane().setLayout(null);</span>
+		
+		
+<span class="nc" id="L63">		nr1TF = new JTextField();</span>
+<span class="nc" id="L64">		nr1TF.setBounds(6, 6, 321, 58);</span>
+<span class="nc" id="L65">		frame.getContentPane().add(nr1TF);</span>
+<span class="nc" id="L66">		nr1TF.setColumns(10);</span>
+		
+<span class="nc" id="L68">		nr2TF = new JTextField();</span>
+<span class="nc" id="L69">		nr2TF.setBounds(6, 71, 321, 58);</span>
+<span class="nc" id="L70">		frame.getContentPane().add(nr2TF);</span>
+<span class="nc" id="L71">		nr2TF.setColumns(10);</span>
+		
+<span class="nc" id="L73">		jlabelRes.setBounds(6, 129, 321, 20);</span>
+<span class="nc" id="L74">		frame.getContentPane().add(jlabelRes);</span>
+
+<span class="nc" id="L76">		JButton btn_sqrt = new JButton(&quot;√&quot;);</span>
+<span class="nc" id="L77">		btn_sqrt.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+				
+<span class="nc" id="L80">				firstNum = Double.parseDouble(String.valueOf(textField.getText()));</span>
+<span class="nc" id="L81">				firstNum = CalcAdv.root(firstNum);</span>
+<span class="nc" id="L82">				jlabelRes.setText(String.valueOf(firstNum));</span>
+<span class="nc" id="L83">			}</span>
+		});
+<span class="nc" id="L85">		btn_sqrt.setBounds(166, 153, 80, 45);</span>
+<span class="nc" id="L86">		frame.getContentPane().add(btn_sqrt);</span>
+		
+<span class="nc" id="L88">		JButton btn_cbrt = new JButton(&quot;cbrt&quot;);</span>
+<span class="nc" id="L89">		btn_cbrt.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+				
+<span class="nc" id="L92">				firstNum = Double.parseDouble(String.valueOf(textField.getText()));</span>
+<span class="nc" id="L93">				firstNum = CalcAdv.cbrt(firstNum);</span>
+<span class="nc" id="L94">				jlabelRes.setText(String.valueOf(firstNum));</span>
+				
+<span class="nc" id="L96">			}</span>
+		});
+<span class="nc" id="L98">		btn_cbrt.setBounds(85, 153, 80, 45);</span>
+<span class="nc" id="L99">		frame.getContentPane().add(btn_cbrt);</span>
+
+<span class="nc" id="L101">		JButton btn_tan = new JButton(&quot;tan&quot;);</span>
+<span class="nc" id="L102">		btn_tan.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+				
+<span class="nc" id="L105">				firstNum = Double.parseDouble(String.valueOf(textField.getText()));</span>
+<span class="nc" id="L106">				firstNum = CalcAdv.tan(firstNum);</span>
+<span class="nc" id="L107">				jlabelRes.setText(String.valueOf(firstNum));</span>
+				
+<span class="nc" id="L109">			}</span>
+		});
+<span class="nc" id="L111">		btn_tan.setBounds(6, 153, 80, 45);</span>
+<span class="nc" id="L112">		frame.getContentPane().add(btn_tan);</span>
+
+<span class="nc" id="L114">		JButton btn_sin = new JButton(&quot;sin&quot;);</span>
+<span class="nc" id="L115">		btn_sin.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+				
+<span class="nc" id="L118">				firstNum = Double.parseDouble(nr1TF.getText());</span>
+<span class="nc" id="L119">				res = CalcAdv.sin(firstNum);</span>
+<span class="nc" id="L120">				jlabelRes.setText(&quot;Result: &quot; + res);</span>
+				
+<span class="nc" id="L122">			}</span>
+		});
+<span class="nc" id="L124">		btn_sin.setBounds(247, 153, 80, 45);</span>
+<span class="nc" id="L125">		frame.getContentPane().add(btn_sin);</span>
+
+<span class="nc" id="L127">		JButton btn_cos = new JButton(&quot;cos&quot;);</span>
+<span class="nc" id="L128">		btn_cos.setBounds(85, 196, 80, 45);</span>
+<span class="nc" id="L129">		frame.getContentPane().add(btn_cos);</span>
+		
+<span class="nc" id="L131">		JButton btn_sinh = new JButton(&quot;sinh&quot;);</span>
+<span class="nc" id="L132">		btn_sinh.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+				
+<span class="nc" id="L135">				firstNum = Double.parseDouble(nr1TF.getText());</span>
+<span class="nc" id="L136">				res = CalcAdv.sinh(firstNum);</span>
+<span class="nc" id="L137">				jlabelRes.setText(&quot;Result: &quot; + res);</span>
+				
+<span class="nc" id="L139">			}</span>
+		});
+<span class="nc" id="L141">		btn_sinh.setBounds(247, 196, 80, 45);</span>
+<span class="nc" id="L142">		frame.getContentPane().add(btn_sinh);</span>
+		
+<span class="nc" id="L144">		JButton btn_pi = new JButton(&quot;π&quot;);</span>
+<span class="nc" id="L145">		btn_pi.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+				
+<span class="nc" id="L148">				firstNum = Double.parseDouble(nr1TF.getText());</span>
+<span class="nc" id="L149">				res = CalcAdv.pi(firstNum);</span>
+<span class="nc" id="L150">				jlabelRes.setText(&quot;Result: &quot; + res);</span>
+				
+<span class="nc" id="L152">			}</span>
+		});
+<span class="nc" id="L154">		btn_pi.setBounds(166, 196, 80, 45);</span>
+<span class="nc" id="L155">		frame.getContentPane().add(btn_pi);</span>
+		
+<span class="nc" id="L157">		JButton btn_division = new JButton(&quot;/&quot;);</span>
+<span class="nc" id="L158">		btn_division.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+				
+<span class="nc" id="L161">				firstNum = Double.parseDouble(nr1TF.getText().toString());</span>
+<span class="nc" id="L162">				secondNum = Double.parseDouble(nr2TF.getText().toString());</span>
+<span class="nc" id="L163">				res = CalcBasic.division(firstNum, secondNum);</span>
+<span class="nc" id="L164">				jlabelRes.setText(&quot;Result: &quot; + res);</span>
+				
+				
+<span class="nc" id="L167">			}</span>
+		});
+<span class="nc" id="L169">		btn_division.setBounds(6, 239, 80, 45);</span>
+<span class="nc" id="L170">		frame.getContentPane().add(btn_division);</span>
+		
+<span class="nc" id="L172">		JButton btn_multiplication = new JButton(&quot;*&quot;);</span>
+<span class="nc" id="L173">		btn_multiplication.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+				
+<span class="nc" id="L176">				firstNum = Double.parseDouble(nr1TF.getText().toString());</span>
+<span class="nc" id="L177">				secondNum = Double.parseDouble(nr2TF.getText().toString());</span>
+<span class="nc" id="L178">				res = CalcBasic.multiplication(firstNum, secondNum);</span>
+<span class="nc" id="L179">				jlabelRes.setText(&quot;Result: &quot; + res);</span>
+				
+<span class="nc" id="L181">			}</span>
+		});
+<span class="nc" id="L183">		btn_multiplication.setBounds(85, 239, 80, 45);</span>
+<span class="nc" id="L184">		frame.getContentPane().add(btn_multiplication);</span>
+		
+<span class="nc" id="L186">		JButton btn_addition = new JButton(&quot;+&quot;);</span>
+<span class="nc" id="L187">		btn_addition.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+				
+<span class="nc" id="L190">				firstNum = Double.parseDouble(nr1TF.getText().toString());</span>
+<span class="nc" id="L191">				secondNum = Double.parseDouble(nr2TF.getText().toString());</span>
+<span class="nc" id="L192">				res = CalcBasic.addition(firstNum, secondNum);</span>
+<span class="nc" id="L193">				jlabelRes.setText(&quot;Result: &quot; + res);</span>
+				
+				
+<span class="nc" id="L196">			}</span>
+		});
+<span class="nc" id="L198">		btn_addition.setBounds(166, 239, 80, 45);</span>
+<span class="nc" id="L199">		frame.getContentPane().add(btn_addition);</span>
+		
+<span class="nc" id="L201">		JButton btn_subtraction = new JButton(&quot;-&quot;);</span>
+<span class="nc" id="L202">		btn_subtraction.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+				
+<span class="nc" id="L205">				firstNum = Double.parseDouble(nr1TF.getText().toString());</span>
+<span class="nc" id="L206">				secondNum = Double.parseDouble(nr2TF.getText().toString());</span>
+<span class="nc" id="L207">				res = CalcBasic.subtraction(firstNum, secondNum);</span>
+<span class="nc" id="L208">				jlabelRes.setText(&quot;Result: &quot; + res);</span>
+				
+				
+<span class="nc" id="L211">			}</span>
+		});
+<span class="nc" id="L213">		btn_subtraction.setBounds(6, 196, 80, 45);</span>
+<span class="nc" id="L214">		frame.getContentPane().add(btn_subtraction);</span>
+<span class="nc" id="L215">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

@@ -1,23 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="41" passed="41">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="138" started-at="2018-12-13T11:36:58Z" finished-at="2018-12-13T11:36:58Z">
+  <suite name="Surefire suite" duration-ms="156" started-at="2018-12-20T16:43:35Z" finished-at="2018-12-20T16:43:35Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="138" started-at="2018-12-13T11:36:58Z" finished-at="2018-12-13T11:36:58Z">
-      <class name="com.kvalit18.martinlindberg.MartinsCalculator.AppTest">
-        <test-method status="PASS" signature="testApp()[pri:0, instance:testApp(com.kvalit18.martinlindberg.MartinsCalculator.AppTest)]" name="testApp" duration-ms="7" started-at="2018-12-13T12:36:58Z" finished-at="2018-12-13T12:36:58Z">
+    <test name="Surefire test" duration-ms="156" started-at="2018-12-20T16:43:35Z" finished-at="2018-12-20T16:43:35Z">
+      <class name="com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest">
+        <test-method status="PASS" signature="testSubtractionSecondZero()[pri:0, instance:testSubtractionSecondZero(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testSubtractionSecondZero" duration-ms="9" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testApp -->
-      </class> <!-- com.kvalit18.martinlindberg.MartinsCalculator.AppTest -->
-      <class name="com.kvalit18.martinlindberg.MartinsCalculator.MethodsTest">
-        <test-method status="PASS" signature="test()[pri:0, instance:test(com.kvalit18.martinlindberg.MartinsCalculator.MethodsTest)]" name="test" duration-ms="0" started-at="2018-12-13T12:36:58Z" finished-at="2018-12-13T12:36:58Z">
+        </test-method> <!-- testSubtractionSecondZero -->
+        <test-method status="PASS" signature="testAdditionSecondZero()[pri:0, instance:testAdditionSecondZero(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testAdditionSecondZero" duration-ms="5" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- com.kvalit18.martinlindberg.MartinsCalculator.MethodsTest -->
+        </test-method> <!-- testAdditionSecondZero -->
+        <test-method status="PASS" signature="testAdditionZeros()[pri:0, instance:testAdditionZeros(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testAdditionZeros" duration-ms="1" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdditionZeros -->
+        <test-method status="PASS" signature="testAdditionPositive()[pri:0, instance:testAdditionPositive(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testAdditionPositive" duration-ms="3" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdditionPositive -->
+        <test-method status="PASS" signature="testAdditionNegative()[pri:0, instance:testAdditionNegative(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testAdditionNegative" duration-ms="1" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdditionNegative -->
+        <test-method status="PASS" signature="testMultiplicationFirstZeros()[pri:0, instance:testMultiplicationFirstZeros(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testMultiplicationFirstZeros" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplicationFirstZeros -->
+        <test-method status="PASS" signature="testDivisionFirstZero()[pri:0, instance:testDivisionFirstZero(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testDivisionFirstZero" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivisionFirstZero -->
+        <test-method status="PASS" signature="testMultiplicationSecondZero()[pri:0, instance:testMultiplicationSecondZero(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testMultiplicationSecondZero" duration-ms="1" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplicationSecondZero -->
+        <test-method status="PASS" signature="testMultiplicationPositive()[pri:0, instance:testMultiplicationPositive(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testMultiplicationPositive" duration-ms="1" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplicationPositive -->
+        <test-method status="PASS" signature="testDivisionPositive()[pri:0, instance:testDivisionPositive(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testDivisionPositive" duration-ms="1" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivisionPositive -->
+        <test-method status="PASS" signature="testMultiplicationNegative()[pri:0, instance:testMultiplicationNegative(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testMultiplicationNegative" duration-ms="1" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplicationNegative -->
+        <test-method status="PASS" signature="testDivisionNegative()[pri:0, instance:testDivisionNegative(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testDivisionNegative" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivisionNegative -->
+        <test-method status="PASS" signature="testSubtractionPositive()[pri:0, instance:testSubtractionPositive(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testSubtractionPositive" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtractionPositive -->
+        <test-method status="PASS" signature="testSubtraction3FirstZero()[pri:0, instance:testSubtraction3FirstZero(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testSubtraction3FirstZero" duration-ms="1" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtraction3FirstZero -->
+        <test-method status="PASS" signature="testAdditionFirstZero()[pri:0, instance:testAdditionFirstZero(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testAdditionFirstZero" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdditionFirstZero -->
+        <test-method status="PASS" signature="testSubtractionNegative()[pri:0, instance:testSubtractionNegative(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testSubtractionNegative" duration-ms="1" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtractionNegative -->
+        <test-method status="PASS" signature="testMultiplicationZeros()[pri:0, instance:testMultiplicationZeros(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testMultiplicationZeros" duration-ms="1" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplicationZeros -->
+        <test-method status="PASS" signature="testDivisionSecondZero()[pri:0, instance:testDivisionSecondZero(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testDivisionSecondZero" duration-ms="8" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivisionSecondZero -->
+        <test-method status="PASS" signature="testSubtractionZeros()[pri:0, instance:testSubtractionZeros(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testSubtractionZeros" duration-ms="1" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtractionZeros -->
+        <test-method status="PASS" signature="testDivisionZeros()[pri:0, instance:testDivisionZeros(com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest)]" name="testDivisionZeros" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivisionZeros -->
+      </class> <!-- com.kvalit18.martinlindberg.MartinsCalculator.CalcBasicTest -->
+      <class name="com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest">
+        <test-method status="PASS" signature="testTanWithPositive()[pri:0, instance:testTanWithPositive(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testTanWithPositive" duration-ms="1" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTanWithPositive -->
+        <test-method status="PASS" signature="testTanWithNegative()[pri:0, instance:testTanWithNegative(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testTanWithNegative" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTanWithNegative -->
+        <test-method status="PASS" signature="testCosWithNegative()[pri:0, instance:testCosWithNegative(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testCosWithNegative" duration-ms="1" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCosWithNegative -->
+        <test-method status="PASS" signature="testCosWithPositive()[pri:0, instance:testCosWithPositive(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testCosWithPositive" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCosWithPositive -->
+        <test-method status="PASS" signature="testSinhWithPositive()[pri:0, instance:testSinhWithPositive(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testSinhWithPositive" duration-ms="1" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSinhWithPositive -->
+        <test-method status="PASS" signature="testSinhWithNegative()[pri:0, instance:testSinhWithNegative(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testSinhWithNegative" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSinhWithNegative -->
+        <test-method status="PASS" signature="testCosWithZero()[pri:0, instance:testCosWithZero(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testCosWithZero" duration-ms="1" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCosWithZero -->
+        <test-method status="PASS" signature="testcbrtWithZero()[pri:0, instance:testcbrtWithZero(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testcbrtWithZero" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcbrtWithZero -->
+        <test-method status="PASS" signature="testSinhWithZero()[pri:0, instance:testSinhWithZero(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testSinhWithZero" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSinhWithZero -->
+        <test-method status="PASS" signature="testRootWithNegative()[pri:0, instance:testRootWithNegative(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testRootWithNegative" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRootWithNegative -->
+        <test-method status="PASS" signature="testRootWithPositive()[pri:0, instance:testRootWithPositive(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testRootWithPositive" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRootWithPositive -->
+        <test-method status="PASS" signature="testcbrtWithPositive()[pri:0, instance:testcbrtWithPositive(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testcbrtWithPositive" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcbrtWithPositive -->
+        <test-method status="PASS" signature="testRootWithZero()[pri:0, instance:testRootWithZero(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testRootWithZero" duration-ms="1" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRootWithZero -->
+        <test-method status="PASS" signature="testcbrtWithNegative()[pri:0, instance:testcbrtWithNegative(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testcbrtWithNegative" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcbrtWithNegative -->
+        <test-method status="PASS" signature="testPiWithPositive()[pri:0, instance:testPiWithPositive(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testPiWithPositive" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPiWithPositive -->
+        <test-method status="PASS" signature="testPiWithNegative()[pri:0, instance:testPiWithNegative(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testPiWithNegative" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPiWithNegative -->
+        <test-method status="PASS" signature="testSinWithPositive()[pri:0, instance:testSinWithPositive(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testSinWithPositive" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSinWithPositive -->
+        <test-method status="PASS" signature="testSinWithNegative()[pri:0, instance:testSinWithNegative(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testSinWithNegative" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSinWithNegative -->
+        <test-method status="PASS" signature="testPiWithZero()[pri:0, instance:testPiWithZero(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testPiWithZero" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPiWithZero -->
+        <test-method status="PASS" signature="testSinWithZero()[pri:0, instance:testSinWithZero(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testSinWithZero" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSinWithZero -->
+        <test-method status="PASS" signature="testTanWithZero()[pri:0, instance:testTanWithZero(com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest)]" name="testTanWithZero" duration-ms="0" started-at="2018-12-20T17:43:35Z" finished-at="2018-12-20T17:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTanWithZero -->
+      </class> <!-- com.kvalit18.martinlindberg.MartinsCalculator.CalcAdvTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

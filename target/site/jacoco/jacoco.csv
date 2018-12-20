@@ -1,3 +1,15 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-MartinsCalculator,com.kvalit18.martinlindberg.MartinsCalculator,App,7,0,0,0,3,0,2,0,2,0
-MartinsCalculator,com.kvalit18.martinlindberg.MartinsCalculator,Methods,0,7,0,0,0,2,0,2,0,2
+MartinsCalculator,com.kvalit18.martinlindberg.MartinsCalculator,Main.new ActionListener() {...},39,0,0,0,5,0,2,0,2,0
+MartinsCalculator,com.kvalit18.martinlindberg.MartinsCalculator,Main.new ActionListener() {...},34,0,0,0,5,0,2,0,2,0
+MartinsCalculator,com.kvalit18.martinlindberg.MartinsCalculator,Main.new ActionListener() {...},34,0,0,0,5,0,2,0,2,0
+MartinsCalculator,com.kvalit18.martinlindberg.MartinsCalculator,CalcAdv,0,37,0,0,0,14,0,8,0,8
+MartinsCalculator,com.kvalit18.martinlindberg.MartinsCalculator,Main.new ActionListener() {...},34,0,0,0,5,0,2,0,2,0
+MartinsCalculator,com.kvalit18.martinlindberg.MartinsCalculator,Main.new Runnable() {...},16,0,0,0,7,0,2,0,2,0
+MartinsCalculator,com.kvalit18.martinlindberg.MartinsCalculator,Main.new ActionListener() {...},52,0,0,0,6,0,2,0,2,0
+MartinsCalculator,com.kvalit18.martinlindberg.MartinsCalculator,Main.new ActionListener() {...},52,0,0,0,6,0,2,0,2,0
+MartinsCalculator,com.kvalit18.martinlindberg.MartinsCalculator,CalcBasic,0,30,0,2,0,9,0,6,0,5
+MartinsCalculator,com.kvalit18.martinlindberg.MartinsCalculator,Main,355,0,0,0,66,0,3,0,3,0
+MartinsCalculator,com.kvalit18.martinlindberg.MartinsCalculator,Main.new ActionListener() {...},52,0,0,0,6,0,2,0,2,0
+MartinsCalculator,com.kvalit18.martinlindberg.MartinsCalculator,Main.new ActionListener() {...},52,0,0,0,6,0,2,0,2,0
+MartinsCalculator,com.kvalit18.martinlindberg.MartinsCalculator,Main.new ActionListener() {...},39,0,0,0,5,0,2,0,2,0
+MartinsCalculator,com.kvalit18.martinlindberg.MartinsCalculator,Main.new ActionListener() {...},39,0,0,0,5,0,2,0,2,0
