@@ -59,10 +59,6 @@ public class Main {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		/**textField = new JTextField();
-		textField.setBounds(6, 6, 401, 58);
-		frame.getContentPane().add(textField);
-		textField.setColumns(10);*/
 		
 		nr1TF = new JTextField();
 		nr1TF.setBounds(6, 6, 321, 58);
@@ -101,19 +97,6 @@ public class Main {
 		});
 		btn_cbrt.setBounds(85, 153, 80, 45);
 		frame.getContentPane().add(btn_cbrt);
-		
-		JButton btn_xy3 = new JButton("x^2");
-		btn_xy3.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				
-				firstNum = Double.parseDouble(nr1TF.getText().toString());
-				res = CalcAdv.pow2(firstNum);
-				jlabelRes.setText("Result: " + res);
-				
-			}
-		});
-		btn_xy3.setBounds(6, 196, 80, 45);
-		frame.getContentPane().add(btn_xy3);
 
 		JButton btn_tan = new JButton("tan");
 		btn_tan.addActionListener(new ActionListener() {
@@ -227,7 +210,7 @@ public class Main {
 				
 			}
 		});
-		btn_subtraction.setBounds(247, 239, 80, 45);
+		btn_subtraction.setBounds(6, 196, 80, 45);
 		frame.getContentPane().add(btn_subtraction);
 	}
 }

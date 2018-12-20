@@ -3,14 +3,9 @@ package com.kvalit18.martinlindberg.MartinsCalculator;
 public class CalcAdv implements CalculatorAdvancedOperationsInterface {
 	
 	public double pi(double input) {
-		input = (3.141592653589) * 2;
-		return input;
+		return (Math.PI * input);		
 	}
-	
-	public double pow2(double input) {
-		input = (input * input);
-		return input;			
-	}	
+		
 	public double sin(double input) {
 		input = Math.sin(input);
 		return input;
@@ -36,10 +31,6 @@ public class CalcAdv implements CalculatorAdvancedOperationsInterface {
 	}
 	public double cbrt(double input) {
 		input = Math.cbrt(input);
-		return input;
-	}
-	public double plusminus(double input) {
-		input = input * (-1);
 		return input;
 	}
 	
