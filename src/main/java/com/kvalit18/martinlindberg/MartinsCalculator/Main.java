@@ -27,7 +27,7 @@ public class Main {
 	private JTextField textField;
 
 	/**
-	 * Launch the application.
+	 * @param args Launch the application.
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
